@@ -6,7 +6,7 @@ Se trata de una **pequeña intranet** donde los profesores pueden iniciar sesió
 
 ---
 
-## 💡 Funcionalidades
+## Funcionalidades
 
 - Inicio de sesión de profesores verificando la existencia en la base de datos.
 - Acceso al **menú principal** tras iniciar sesión correctamente.
@@ -18,7 +18,7 @@ Se trata de una **pequeña intranet** donde los profesores pueden iniciar sesió
 
 El objetivo principal es **practicar la conexión a MySQL con PHP y la manipulación de datos** a través de consultas SQL.
 
-## ⚙️ Requisitos
+## Requisitos
 
 - PHP 7+  
 - MySQL 5.7+ o 8  
@@ -26,7 +26,7 @@ El objetivo principal es **practicar la conexión a MySQL con PHP y la manipulac
 
 ---
 
-## 🛠️ Configuración
+## Configuración
 
 1. **Clona el repositorio:**
 ```bash
