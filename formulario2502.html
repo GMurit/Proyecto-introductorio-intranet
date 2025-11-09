@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editor Autorizado Form 02</title>
+<style>
+  body {
+    background-color: black;
+    color: limegreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    margin: 20px 0 10px 0;
+  }
+
+  button, a {
+    color: limegreen;
+    text-decoration: none;
+    border: 1px solid limegreen;
+    padding: 6px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: black;
+  }
+
+  button:hover, a:hover {
+    background-color: limegreen;
+    color: black;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+</style>
+<script>
+  var decidir = " menú se añadirá aquí próximamente como nueva opción para Usted.";
+  var catalogo = 2;
+  var cargoMenu = 1;
+  var abono01 = 0;
+  var mPlus = 0;
+  var saldo = catalogo + abono01;
+
+  function myCatalog(catalogo, mPlus) {
+    return catalogo - mPlus + decidir;
+  }
+</script>
+</head>
+<body onload="
+  document.getElementById('Riendo1').innerHTML = saldo; 
+  document.getElementById('Riendo2').innerHTML = cargoMenu;
+  document.getElementById('Riendo0').innerHTML = new Date();
+">
+  <p><i>Inicio de sesión: <span id="Riendo0"></span></i></p>
+
+  <h2>MENÚ DE OPCIONES GENERALES</h2>
+  <button><a href="conectar06.php" target="_self" name="Ver">Consultar cursos</a></button>
+  <button><a href="conectar07.php" target="_self" name="Jef">Equipo de jefatura</a></button>
+  <button><a href="index.html" target="_self" name="Salir">Salir</a></button>
+
+  <hr>
+
+  <h2>MENÚ DE OPCIONES ESPECÍFICAS</h2>
+  <button><a href="formulario_nuevo_curso.html" target="_self" name="nuevo">Añadir un curso nuevo</a></button>
+  <button><a href="borrar_curso.html" target="_self" name="borrar">Borrar un curso</a></button>
+  <button><a href="modificar_curso.html" target="_self" name="modificar">Modificar un curso</a></button>
+</body>
+</html>

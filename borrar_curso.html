@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Borrar Curso</title>
+<style>
+  body {
+    background-color: black;
+    color: limegreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  input[type="text"] {
+    background-color: black;
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  input[type="submit"], a {
+    color: limegreen;
+    text-decoration: none;
+    border: 1px solid limegreen;
+    padding: 6px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover, a:hover {
+    background-color: limegreen;
+    color: black;
+  }
+</style>
+</head>  
+<body>
+  <h2>Borrar Curso</h2>
+  <p>Introduce el nombre del curso que deseas borrar:</p>
+
+  <form action="borrar_curso.php" method="post">
+    <input type="text" name="name_curso" required><br>
+    <input type="submit" value="Borrar curso">
+  </form>
+
+  <a href="formulario2502.html" target="_self" name="nuevo">Volver al menú</a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Modificar Nombre de Curso</title>
+<style>
+  body {
+    background-color: black;
+    color: limegreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+
+  label {
+    display: block;
+    margin: 10px 0 5px 0;
+  }
+
+  input[type="text"], input[type="submit"] {
+    background-color: black;
+    color: limegreen;
+    border: 1px solid limegreen;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: limegreen;
+    color: black;
+  }
+
+  a {
+    color: limegreen;
+    text-decoration: none;
+    border: 1px solid limegreen;
+    padding: 6px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  a:hover {
+    background-color: limegreen;
+    color: black;
+  }
+</style>
+</head>
+<body>
+  <h2>Rellena los siguientes campos para modificar el nombre del curso</h2>
+  <form action="modificar_nombre_curso.php" method="post">
+    <label for="name_antiguo">Nombre del curso que quieres modificar:</label>
+    <input type="text" id="name_antiguo" name="name_antiguo" required>
+
+    <label for="name_nuevo">Nuevo nombre del curso:</label>
+    <input type="text" id="name_nuevo" name="name_nuevo" required>
+
+    <input type="submit" value="Modificar nombre del curso">
+  </form>
+  <a href="formulario2502.html">Volver al menú</a>
+</body>
+</html>
